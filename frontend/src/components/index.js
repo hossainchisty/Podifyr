@@ -1,0 +1,15 @@
+export { default as Navbar } from './Shared/Navbar';
+export { default as SideBar } from './Sidebar/SideBar';
+export { default as Feed } from './Feed/Feed';
+export { default as SearchFeed } from './Feed/SearchFeed';
+export { default as ChannelDetail } from './ChannelCard/ChannelDetail';
+export { default as VideoDetail } from './Video/VideoDetail';
+export { default as SearchBar } from './Discover/SearchBar';
+export { default as ChannelCard } from './ChannelCard/ChannelCard';
+export { default as VideoCard } from './Video/VideoCard';
+export { default as Loader } from './Shared/Loader';
+export { default as Videos } from './Video/Videos';
+export { default as Discover } from './Discover/DiscoverPodcast';
+export { default as CreatePodcast } from './Podcast/CreatePodcast';
+export { default as Profile } from './Profile/UserProfile';
+export { default as ViewPodCast } from './Profile/ViewPodCast';
