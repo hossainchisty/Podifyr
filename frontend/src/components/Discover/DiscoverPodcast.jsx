@@ -76,7 +76,7 @@ const Discover = () => {
         alignItems='center'
         mb={4}
       >
-        <Box display='flex' alignItems='center' sx={{ width: '70%' }}>
+        <Box display='flex' alignItems='center' sx={{ width: '100%' }}>
           <TextField
             variant='outlined'
             placeholder='Type here to search'
@@ -94,7 +94,7 @@ const Discover = () => {
         </Box>
       </Box>
 
-      <Typography variant='h5' gutterBottom sx={{ color: '#f6b26b' }}>
+      <Typography variant='h5' gutterBottom sx={{ color: '#F97E8B' }}>
         Discover Community Podcasts
       </Typography>
 
@@ -109,7 +109,7 @@ const Discover = () => {
                 sx={{ height: 150 }}
               />
               <CardContent>
-                <Typography variant='h6' gutterBottom sx={{ color: '#f6b26b' }}>
+                <Typography variant='h6' gutterBottom sx={{ color: '#F97E8B' }}>
                   {podcast.title}
                 </Typography>
                 <Typography variant='body2' color='white'>
