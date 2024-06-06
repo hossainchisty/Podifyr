@@ -8,6 +8,7 @@ import {
   Stack,
 } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { Verified } from '@mui/icons-material';
 
 const Profile = () => {
   return (
@@ -49,7 +50,13 @@ const Profile = () => {
           fontWeight='bold'
           sx={{ color: '#F97E8B', mb: 2 }}
         >
-          Hossain Chisty
+          Hossain C.
+          <Verified
+            sx={{
+              color: '#1F57C3',
+              p: 0.2,
+            }}
+          />
         </Typography>
 
         <Typography variant='body1' sx={{ mb: 3 }}>
@@ -76,7 +83,15 @@ const Profile = () => {
             }}
           >
             {' '}
-            <Link to='/my-profile/view-podcast'>View Podcasts</Link>
+            <Link to='/my-profile/view-podcast'>
+              <Typography
+                sx={{
+                  color: 'white',
+                }}
+              >
+                View Podcasts
+              </Typography>
+            </Link>
           </Button>
         </Stack>
       </Box>

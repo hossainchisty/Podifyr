@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Button, Stack, Typography } from '@mui/material';
 import { fetchFromAPI } from '../../utils/fetchFromAPI';
 import { Videos, SideBar } from '../';
 
@@ -22,12 +22,32 @@ const Feed = () => {
           height: { sx: 'auto', md: '92vh' },
           borderRight: '1px solid #3d3d3d',
           px: { sx: 0, md: 2 },
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
         }}
       >
         <SideBar
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
+
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            mt: 2,
+            mb: 1,
+          }}
+        >
+          <Button
+            variant='contained'
+            sx={{ bgcolor: '#F97E8B', color: 'black', borderRadius: 2 }}
+          >
+            Sign In
+          </Button>
+        </Box>
       </Box>
 
       <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
